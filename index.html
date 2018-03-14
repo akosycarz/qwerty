@@ -1,9 +1,37 @@
 <!DOCKTYPE html>
 <html>
 <head>
-	<title> ćwiczenia z js</title>title>
+	<title> ćwiczenia z js</title>
 </head>
+
 <body>
-	
+	<button id="jeden"onclick="ziemniak()"> wciśnij mnie</button>
+	<button id="dwa" onclick="ciastka()"> naciskaj</button>
+	<button id="trzy" onclick="babeczka()">naciśnij</button>
+	<p id="demo"></p>
+
+	<script type="text/javascript"> 
+		function japko(a,b){
+			console.log(a+b);
+
+	}
+	japko(2,5);
+	function ziemniak(){
+		alert("ojejku");
+	}
+	function ciastka(){
+		confirm("na pewno?");
+	}
+	function babeczka(){
+
+		var tak=prompt("jak masz na imię?", "Harry Potter");
+
+		if (tak !=null) {
+			document.getElementById("demo").
+			innerHTML = "Hello "+ tak + " jak się masz?";
+		}
+		}
+	</script>
+
 </body>
 </html>
